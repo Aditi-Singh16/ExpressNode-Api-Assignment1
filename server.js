@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 app.use(cors())
 
-mongoose.connect("mongodb+srv://aditi:ak$ingh76@cluster0.mingc.mongodb.net/todoApp", { useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect("mongodb+srv://aditi:<password>@cluster0.mingc.mongodb.net/todoApp", { useUnifiedTopology: true, useNewUrlParser: true })
     .then(() => console.log("Connection Successful"))
     .catch((err) => console.log(err));
 
